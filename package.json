@@ -1,0 +1,23 @@
+{
+  "name": "kyocera-toner-auto-accept",
+  "version": "1.0.0",
+  "description": "Automatically acknowledge the Kyocera ECOSYS 'Non-genuine Toner' panel prompt after a power cycle, by driving the printer's own remote operation panel from any computer on the same network.",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "kyocera-toner-accept": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "accept": "node index.js",
+    "debug": "node index.js --debug",
+    "test-trigger": "node tools/trigger-block.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "net-snmp": "^3.11.2",
+    "puppeteer-core": "^23.0.0"
+  }
+}

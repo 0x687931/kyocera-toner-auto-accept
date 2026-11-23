@@ -1,0 +1,20 @@
+# Never commit real device config (contains your printer's address and admin password)
+config.json
+
+# Dependencies
+node_modules/
+
+# Debug screenshots of your panel (may reveal your network / device details)
+debug/
+*.png
+
+# Chrome profile / runtime
+.chrome-profile/
+
+# Logs
+*.log
+logs/
+
+# OS cruft
+.DS_Store
+Thumbs.db
